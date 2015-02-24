@@ -1,5 +1,6 @@
-# Allele-Frequency-Spectrum-simulations
-# written by Elsa Guillot elza.guillot@gmail.com - Massey University
+Allele-Frequency-Spectrum-simulations
+Written by Elsa Guillot elza.guillot@gmail.com - Massey University
+
 
 This reprository contains the code to reproduce simulated allele frequency spectrum to check whether high frequency observed in the paper "Y chromosome descent clusters and male differential reproductive success: young lineage expansions dominate Asian pastoral populations" by Balaresquee et published in the European journal of human genetics.
 It contains the integrality of the code needed to reproduce the simulated allele frequency spectrum (AFS)to be conpared with figure 1 of the paper
