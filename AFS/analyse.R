@@ -2,13 +2,12 @@
 
 # Written by Elsa Guillot elza.guillot@gmail.com
 
-# No input in command line
-# Must have the files processed_AFS.txt in the same directory
-# Output file fig1.pdf
-# Comamnd line output: percentage of simulations having at least 15 major haplotypes (>20 individuals)
+# No input on command line
+# Must have the file 'processed_AFS.txt' in the same directory
+# Output file: fig1.pdf
+# Command line output: percentage of simulations having at least 15 'high-frequency' haplotypes (>20 individuals)
 
-# This code processes the output of the simulation to compare the distribution of AFS with the observed data
-# The script eventually produces plot fig1.pdf which matches fig1.pdf of the original paper
+# The script produces a plot that matches Figure 1 in the original paper (but including confidence intervals)
 
 
 #read the data

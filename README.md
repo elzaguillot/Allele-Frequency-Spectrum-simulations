@@ -1,23 +1,32 @@
-Allele-Frequency-Spectrum-simulations
-Written by Elsa Guillot elza.guillot@gmail.com - Massey University
+Allele Frequency Spectrum
+
+Elsa Guillot
+Massey University
+elza.guillot@gmail.com
 
 
-This reprository contains the code to reproduce simulated allele frequency spectrum observed in the paper "Y chromosome descent clusters and male differential reproductive success: young lineage expansions dominate Asian pastoral populations" by Balaresque et al. 
-It contains the integrality of the code needed to reproduce the simulated allele frequency spectrum (AFS) to be conpared with figure 1 of the paper, and check whether the observation does not match processes of neutral evolution
+This repository contains the code to simulate the allele ('haplotype') frequency spectrum (Figure 1) observed in Central Asia by Balaresque and colleagues ("Y chromosome descent clusters and male differential reproductive success: Young lineage expansions dominate Asian pastoral populations").
 
-In the 1st part one must find a theta that matches the observed diversity presented in the paper. The necessary code is under the theta repository
-In a 2nd part one must run 1 million simulations to create a distribution of AFS to be compared with the observation. The necessary code is under the AFS directory
-Each time, one must run simulations with the software ms (Hudson 2002)  processed by the microsat software (by M.P. Cox), transofrm the output, process the files through python and analysis the data with R.
+The aim is to check whether the observed distribution varies from neutral expectations.
 
-The necessary requirement to run the attached code are:
+Part 1: Finding theta
+
+The aim is to determine which value of theta (the scaled population mutation rate) matches the observed allelic diversity.  The code for this analysis is provided in the 'theta' repository.
+
+Part 2: Finding the variance of the allele frequency distribution
+
+The aim is to place confidence intervals on the observed allele frequency distribution from one million coalescent datasets.  The code for this analysis is provided in the 'AFS' repository.
+
+Note: runtimes for both parts of this analysis are long (hours to days).  Y chromosome coalescent trees are generated with ms and transformed to 8 fully-linked STR loci using microsat.  Output files are parsed with Python and R.  For each section, the entire analysis has been automated as a bash script.
+
+The following computer requirements to needed to run the code:
+
 - UNIX operating system
-- installed R and python
+- R
+- Python
+- ms: http://home.uchicago.edu/~rhudson1/source/mksamples.html
+- microsat: http://massey.genomicus.com/software.html#microsat
 
-MS software:
-http://home.uchicago.edu/~rhudson1/source/mksamples.html
+Hudson R. 2002. Generating samples under a Wright–Fisher neutral model of genetic variation. Bioinformatics 18:337-338.
 
-Microsat software:
-http://massey.genomicus.com/software.html#microsat
-
-Hudson R R. 2002. Generating samples under a Wright–Fisher neutral model of genetic variation. Bioinformatics, 18(2):337-338
-Balaresque et al. 2015. Y chromosome descent clusters and male differential reproductive success: young lineage expansions dominate Asian pastoral populations. In press
+Balaresque P, et al. 2015. Y chromosome descent clusters and male differential reproductive success: Young lineage expansions dominate Asian pastoral populations. European Journal of Human Genetics, In Press.

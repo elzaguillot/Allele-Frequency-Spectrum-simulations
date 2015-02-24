@@ -2,13 +2,13 @@
 
 # Written by Elsa Guillot elza.guillot@gmail.com
 
-# No input in command line
-# Must have the files simulatedXX.txt in the same directory
+# No input on command line
+# Must have the files 'simulatedXX.txt' in the same directory
 # Output: processed_AFS.txt
 
-# This code processes the output of the simulation to be readible in R
-# Looking for theta, we must find the average AFS (Allele frequency sprectum) the closest to the observed data
-# For each theta, the simulated output is read, and the average AFS is computed and outputed in processed_AFS.txt
+# This code processes the output of the simulations to make them readable in R
+# To select theta, we must find the average allele frequency spectrum that is the closest to the observed data
+# For each theta, the simulated output is read, and the average allele frequency spectrum is computed and output in the file 'processed_AFS.txt'
 
 
 import numpy as np
@@ -18,15 +18,15 @@ nbsimu=1000
 
 # create array containing observed data
 realdata=[0]*(samplesize+1)
-realdata[1]=1588
+realdata[1]=1562
 realdata[2]=400
 realdata[3]=190
 realdata[4]=85
 realdata[5]=50
 realdata[6]=25
 realdata[7]=20
-realdata[8]=20
-realdata[9]=11
+realdata[8]=21
+realdata[9]=13
 realdata[10]=15
 realdata[11]=10
 realdata[12]=3
@@ -38,7 +38,8 @@ realdata[17]=4
 realdata[18]=4
 realdata[19]=2
 realdata[20]=2
-realdata[23]=1
+realdata[22]=1
+realdata[23]=2
 realdata[24]=3
 realdata[28]=3
 realdata[30]=1

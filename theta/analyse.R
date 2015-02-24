@@ -2,13 +2,13 @@
 
 # Written by Elsa Guillot elza.guillot@gmail.com
 
-# No input in command line
-# Must have the files processed_AFS.txt in the same directory
+# No input on command line
+# Must have the file 'processed_AFS.txt' in the same directory
 # No output file
-# Comamnd line output: best theta
+# Command line output: maximized value of theta
 
-# This code processes the output of the simulation to fidn the theta that best match the simulated distribution
-# The script eventually produces plot if you want to see the AFS
+# This code processes output from the simulations to find which theta most closely matches the observed distribution
+# The script produces a plot of the allele frequency distribution
 
 
 #read the data
@@ -49,6 +49,4 @@ for( i in 2:(nbsimu+1))
         lines(1:20,data[i,2:21],col=rainbow(1000)[i])
     }
 lines(1:20,data[best,2:21],col='blue',lwd=3) 
-
-
 
