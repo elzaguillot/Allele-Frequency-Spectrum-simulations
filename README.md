@@ -1,11 +1,12 @@
 Allele Frequency Spectrum
 
 Elsa Guillot
-Massey University
+University of Lausanne
+(Previously Massey University)
 elza.guillot@gmail.com
 
 
-This repository contains the code to simulate the allele ('haplotype') frequency spectrum (Figure 1) observed in Central Asia by Balaresque and colleagues ("Y chromosome descent clusters and male differential reproductive success: Young lineage expansions dominate Asian pastoral populations").
+This repository contains the code to simulate the allele ('haplotype') frequency spectrum (Figure 1) observed in Central Asia by Balaresque and colleagues ("Y chromosome descent clusters and male differential reproductive success: Young lineage expansions dominate Asian pastoral populations"). This corresponds to the work presented in the manuscript found here: http://www.biorxiv.org/content/early/2015/07/07/022160
 
 The aim is to check whether the observed distribution varies from neutral expectations.
 
