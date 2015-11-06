@@ -69,9 +69,10 @@ for l in ll:
     newaverage=[0]*300 # smaller for faster processing
     tmp.append(l.strip())
     for k in l.strip().split('\\n')[0].split(' '):
-        newaverage[int(k)]+=1.0 # store the allele frequency spectrum of each simulation
 	if(int(k)>299): #if extreme value store at least extreme value to make a smaller array - faster processing not impact on outcome
-		newaverage[int(k)]+=1.0 
+		newaverage[299]+=1.0 
+        else:
+            newaverage[int(k)]+=1.0 # store the allele frequency spectrum of each simulation
     for k in newaverage[0:300]: 
         out2+=str(k)+ " " #output the AFS of each simulation in a file
     out2 += '\n'
