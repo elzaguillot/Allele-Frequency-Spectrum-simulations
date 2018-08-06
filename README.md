@@ -26,7 +26,7 @@ The following computer requirements to needed to run the code:
 - R
 - Python
 - ms: http://home.uchicago.edu/~rhudson1/source/mksamples.html
-- microsat: http://massey.genomicus.com/software.html#microsat
+- microsat: https://www.genomicus.com/software.html#microsat
 
 Hudson R. 2002. Generating samples under a Wright–Fisher neutral model of genetic variation. Bioinformatics 18:337-338.
 
